@@ -1,0 +1,25 @@
+body {
+    background-color: #f3f7f0;
+}
+
+.navbar {
+    background-color: #2e7d32 !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}

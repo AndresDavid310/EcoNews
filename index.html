@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmira EcoNews</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">EcoNews</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CARRUSEL -->
+    <div id="carouselEco" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h3>Campaña de siembra de árboles</h3>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img1.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h3>Recolección de basura</h3>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h3>Feria cultural estudiantil</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEco" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEco" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+    <!-- SECCIÓN NOTICIAS -->
+    <div class="container my-5" id="noticias">
+        <h2 class="text-center mb-4">Noticias Destacadas</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img3.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Siembra de árboles</h5>
+                        <p class="card-text">Estudiantes participaron en una gran jornada de reforestación.</p>
+                        <a href="noticia1.html" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img1.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Recolección de residuos</h5>
+                        <p class="card-text">Actividad ecológica para limpiar parques y promover el reciclaje.</p>
+                        <a href="noticia2.html" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img2.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Feria cultural</h5>
+                        <p class="card-text">Muestras artísticas y culturales realizadas por estudiantes.</p>
+                        <a href="noticia3.html" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FORMULARIO -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Inscríbete a una campaña</h2>
+
+        <form class="p-4 bg-white shadow rounded">
+
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input type="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Colegio</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Selecciona campaña</label>
+                <select class="form-select">
+                    <option>Siembra</option>
+                    <option>Basura</option>
+                    <option>Cultura</option>
+                </select>
+            </div>
+
+            <button class="btn btn-success w-100">Enviar</button>
+
+        </form>
+    </div>
+
+    <footer>
+        Palmira EcoNews © 2025
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
